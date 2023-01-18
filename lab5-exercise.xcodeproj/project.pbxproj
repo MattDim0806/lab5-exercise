@@ -13,6 +13,13 @@
 		EA6022392976D9F30073DCAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6022372976D9F30073DCAB /* Main.storyboard */; };
 		EA60223B2976DA0E0073DCAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA60223A2976DA0E0073DCAB /* Assets.xcassets */; };
 		EA60223E2976DA0E0073DCAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA60223C2976DA0E0073DCAB /* LaunchScreen.storyboard */; };
+		EA6022482976DC750073DCAB /* scrolling.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6022472976DC750073DCAB /* scrolling.storyboard */; };
+		EA60224A2976DC850073DCAB /* zooming.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA6022492976DC850073DCAB /* zooming.storyboard */; };
+		EA60225D2976E95A0073DCAB /* scrollingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60225C2976E95A0073DCAB /* scrollingVC.swift */; };
+		EA6022622976E99E0073DCAB /* scrollingContainerLVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6022612976E99E0073DCAB /* scrollingContainerLVC.swift */; };
+		EA6022652976E9AB0073DCAB /* scrollingContainerRVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6022642976E9AB0073DCAB /* scrollingContainerRVC.swift */; };
+		EA6022692977BD3D0073DCAB /* zoomingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6022682977BD3D0073DCAB /* zoomingVC.swift */; };
+		EA60226F2977BD7D0073DCAB /* zoomingContainerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA60226E2977BD7D0073DCAB /* zoomingContainerVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		EA60223A2976DA0E0073DCAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA60223D2976DA0E0073DCAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA60223F2976DA0E0073DCAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA6022472976DC750073DCAB /* scrolling.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = scrolling.storyboard; sourceTree = "<group>"; };
+		EA6022492976DC850073DCAB /* zooming.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = zooming.storyboard; sourceTree = "<group>"; };
+		EA60225C2976E95A0073DCAB /* scrollingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrollingVC.swift; sourceTree = "<group>"; };
+		EA6022612976E99E0073DCAB /* scrollingContainerLVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrollingContainerLVC.swift; sourceTree = "<group>"; };
+		EA6022642976E9AB0073DCAB /* scrollingContainerRVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scrollingContainerRVC.swift; sourceTree = "<group>"; };
+		EA6022682977BD3D0073DCAB /* zoomingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zoomingVC.swift; sourceTree = "<group>"; };
+		EA60226E2977BD7D0073DCAB /* zoomingContainerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = zoomingContainerVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +70,8 @@
 		EA6022302976D9F30073DCAB /* lab5 */ = {
 			isa = PBXGroup;
 			children = (
+				EA6022672977BD1A0073DCAB /* zooming */,
+				EA60224C2976DD6E0073DCAB /* scrolling */,
 				EA6022312976D9F30073DCAB /* AppDelegate.swift */,
 				EA6022332976D9F30073DCAB /* SceneDelegate.swift */,
 				EA6022352976D9F30073DCAB /* ViewController.swift */,
@@ -65,6 +81,51 @@
 				EA60223F2976DA0E0073DCAB /* Info.plist */,
 			);
 			path = lab5;
+			sourceTree = "<group>";
+		};
+		EA60224C2976DD6E0073DCAB /* scrolling */ = {
+			isa = PBXGroup;
+			children = (
+				EA6022472976DC750073DCAB /* scrolling.storyboard */,
+				EA60225C2976E95A0073DCAB /* scrollingVC.swift */,
+				EA60224F2976DDA10073DCAB /* scrollingContainerLVC */,
+				EA60224D2976DD780073DCAB /* scrollingContainerRVC */,
+			);
+			path = scrolling;
+			sourceTree = "<group>";
+		};
+		EA60224D2976DD780073DCAB /* scrollingContainerRVC */ = {
+			isa = PBXGroup;
+			children = (
+				EA6022642976E9AB0073DCAB /* scrollingContainerRVC.swift */,
+			);
+			path = scrollingContainerRVC;
+			sourceTree = "<group>";
+		};
+		EA60224F2976DDA10073DCAB /* scrollingContainerLVC */ = {
+			isa = PBXGroup;
+			children = (
+				EA6022612976E99E0073DCAB /* scrollingContainerLVC.swift */,
+			);
+			path = scrollingContainerLVC;
+			sourceTree = "<group>";
+		};
+		EA6022672977BD1A0073DCAB /* zooming */ = {
+			isa = PBXGroup;
+			children = (
+				EA60226C2977BD490073DCAB /* zoomingContainerVC */,
+				EA6022682977BD3D0073DCAB /* zoomingVC.swift */,
+				EA6022492976DC850073DCAB /* zooming.storyboard */,
+			);
+			path = zooming;
+			sourceTree = "<group>";
+		};
+		EA60226C2977BD490073DCAB /* zoomingContainerVC */ = {
+			isa = PBXGroup;
+			children = (
+				EA60226E2977BD7D0073DCAB /* zoomingContainerVC.swift */,
+			);
+			path = zoomingContainerVC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -101,7 +162,7 @@
 					};
 				};
 			};
-			buildConfigurationList = EA6022292976D9F30073DCAB /* Build configuration list for PBXProject "lab5" */;
+			buildConfigurationList = EA6022292976D9F30073DCAB /* Build configuration list for PBXProject "lab5-exercise" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -124,7 +185,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA6022482976DC750073DCAB /* scrolling.storyboard in Resources */,
 				EA60223E2976DA0E0073DCAB /* LaunchScreen.storyboard in Resources */,
+				EA60224A2976DC850073DCAB /* zooming.storyboard in Resources */,
 				EA60223B2976DA0E0073DCAB /* Assets.xcassets in Resources */,
 				EA6022392976D9F30073DCAB /* Main.storyboard in Resources */,
 			);
@@ -138,7 +201,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA6022362976D9F30073DCAB /* ViewController.swift in Sources */,
+				EA6022622976E99E0073DCAB /* scrollingContainerLVC.swift in Sources */,
+				EA60226F2977BD7D0073DCAB /* zoomingContainerVC.swift in Sources */,
+				EA6022692977BD3D0073DCAB /* zoomingVC.swift in Sources */,
 				EA6022322976D9F30073DCAB /* AppDelegate.swift in Sources */,
+				EA6022652976E9AB0073DCAB /* scrollingContainerRVC.swift in Sources */,
+				EA60225D2976E95A0073DCAB /* scrollingVC.swift in Sources */,
 				EA6022342976D9F30073DCAB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -216,7 +284,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -271,7 +339,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -289,6 +357,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4M6WN5V3KB;
 				INFOPLIST_FILE = lab5/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,6 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 4M6WN5V3KB;
 				INFOPLIST_FILE = lab5/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -322,7 +392,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		EA6022292976D9F30073DCAB /* Build configuration list for PBXProject "lab5" */ = {
+		EA6022292976D9F30073DCAB /* Build configuration list for PBXProject "lab5-exercise" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				EA6022402976DA0E0073DCAB /* Debug */,
